@@ -16,4 +16,4 @@ print(my_set)
 print(new_set)
 
 my_list = [1,2,3,4,5,5,5]
-print(set(my_list))     #
+print(set(my_list))
