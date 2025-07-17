@@ -3,7 +3,7 @@ basket = ['a', 'x', 'b', 'c', 'd', 'e', 'd']
 print(basket.sort())
 print(basket)
 
-print(basket.reverse())
+print(basket.reverse()) # reverts but doesn't sort
 print(basket)
 
 print("Sorted function")
