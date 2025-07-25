@@ -1,6 +1,6 @@
 def test(a):
     """
-    info: This is test function which print the argument passed
+    info: This is a test function which prints the argument passed
     """
     print(a)
     
