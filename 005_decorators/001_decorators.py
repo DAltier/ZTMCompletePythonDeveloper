@@ -1,12 +1,8 @@
-def my_decorator(func):
-    def wrap_func():
-        print("***********")
-        func()
-        print("***********")
-    return wrap_func
+def hello(func):
+	func()
 
-@my_decorator
-def hello():
-    print("Hello!")
-
-hello()
+def greet():
+	print("hello!")
+       
+a = hello(greet)
+print(a)
