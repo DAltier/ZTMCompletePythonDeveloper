@@ -1,25 +1,30 @@
 import unittest
-import main
+import script
 
 class TestMain(unittest.TestCase):  # inheriting TestCase class
 
-    def setUp(self):    # this method will run before starting all the other test methods
-        print("Starting a method/test: ")
-    
-    def test_add(self):
-        '''This is the info for this particular test'''
-        test_param = 10
-        result = main.add(test_param)
-        self.assertEqual(result,15)
-        
-    def test_add2(self):
-        test_param = 'random string'
-        result = main.add(test_param)
-        self.assertTrue(isinstance(result,ValueError))
-  
-    def tearDown(self):   # this method will run after every test method. Generally used to reset/cleaning up data variables.
-        print("Cleaning up....")
-        
+	def setUp(self):    # this method will run before starting all the other test methods
+		print("Starting a method/test: ")
+
+	def test_add(self):
+		'''This is the info for this particular test'''
+		test_param = 10
+		result = script.add(test_param)
+		self.assertEqual(result,15)
+		
+	def test_add2(self):
+		test_param = 'random string'
+		result = script.add(test_param)
+		self.assertTrue(isinstance(result,ValueError))
+		
+	def test_add3(self):
+		test_param = None
+		result = script.add(test_param)
+		self.assertEqual(result, 'please enter a number')
+
+	def tearDown(self):   # this method will run after every test method. Generally used to reset/cleaning up data variables.
+		print("Cleaning up....")
+		
         
 class A:
     print("\nClass A")
